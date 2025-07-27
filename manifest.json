@@ -1,0 +1,13 @@
+{
+  "manifest_version": 3,
+  "name": "Discord Message Filter",
+  "version": "1.0",
+  "description": "Blocks messages with bad words before sending on Discord.",
+  "permissions": ["scripting", "activeTab"],
+  "content_scripts": [
+    {
+      "matches": ["*://discord.com/*"],
+      "js": ["filter.js"]
+    }
+  ]
+}
